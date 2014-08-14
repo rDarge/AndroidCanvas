@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">AndroidCanvas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_canvas__draw">Canvas_Draw</string>
+    <string name="pull_button">Pull</string>
+    <string name="repel_button">Push</string>
+    <string name="new_button">Create</string>
+    <string name="debugOutput">DEBUG</string>
+    <string-array name="ballTypes">
+        <item>Regular</item>
+        <item>Hungry</item>
+        <item>Hunter</item>
+        <item>Zombie</item>
+    </string-array>
+
+</resources>

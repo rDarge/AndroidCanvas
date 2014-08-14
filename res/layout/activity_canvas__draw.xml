@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+		<!--This part needs to be put in manually, since
+			eclipse doesn't know how to work our new
+			fancy CanvasView thing. -->
+        <com.example.androidcanvas.CanvasView
+            android:id="@+id/canvas"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_button"
+                android:onClick="button_pull" />
+
+            <Button
+                android:id="@+id/button_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repel_button"
+                android:onClick="button_push" />
+
+            <Button
+                android:id="@+id/button_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_button"
+                android:onClick="button_create" />
+
+            <Spinner
+                android:id="@+id/ballChooser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/DebugOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debugOutput" />
+
+</RelativeLayout>
